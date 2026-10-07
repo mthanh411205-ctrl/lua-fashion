@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1c1a17">
+<title>Đăng nhập — LỤA</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Đăng nhập hoặc tạo tài khoản LỤA.">
+<meta property="og:site_name" content="LỤA">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Đăng nhập — LỤA">
+<meta property="og:description" content="Đăng nhập hoặc tạo tài khoản LỤA.">
+<meta property="og:url" content="%ORIGIN%/dangnhap.html">
+<meta property="og:image" content="%ORIGIN%/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="main">
+  <section class="auth-section">
+    <div class="wrap auth-layout">
+      <div class="auth-intro">
+        <span class="hero-eyebrow">Tài khoản LỤA</span>
+        <h1>Đăng nhập để mua sắm nhanh hơn</h1>
+        <ul class="perk-list">
+          <li>Tự điền thông tin giao hàng khi thanh toán</li>
+          <li>Theo dõi và hủy đơn đang chờ xác nhận</li>
+          <li>Viết đánh giá cho sản phẩm bạn đã mua</li>
+        </ul>
+        <div class="demo-box">
+          <strong>Tài khoản mẫu để thử</strong> <small>(bấm để điền — xóa khối này khi đưa web lên mạng)</small>
+          <button type="button" class="demo-acc" data-demo="admin@lua.vn|Admin@123"><span class="pill role-admin">Quản trị viên</span> admin@lua.vn · Admin@123</button>
+          <button type="button" class="demo-acc" data-demo="nhanvien@lua.vn|Staff@123"><span class="pill role-staff">Nhân viên</span> nhanvien@lua.vn · Staff@123</button>
+          <button type="button" class="demo-acc" data-demo="hoa.nguyen@example.com|Khach@123"><span class="pill role-customer">Khách hàng</span> hoa.nguyen@example.com · Khach@123</button>
+        </div>
+      </div>
+
+      <div class="auth-card">
+        <div class="tabs" role="tablist" aria-label="Đăng nhập hoặc đăng ký">
+          <button type="button" role="tab" data-tab="login" aria-selected="true" aria-controls="loginForm">Đăng nhập</button>
+          <button type="button" role="tab" data-tab="register" aria-selected="false" aria-controls="registerForm">Tạo tài khoản</button>
+        </div>
+
+        <form id="loginForm" role="tabpanel" novalidate>
+          <p class="form-note err" role="alert" hidden></p>
+          <div class="form-field">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" name="email" autocomplete="username" required>
+          </div>
+          <div class="form-field">
+            <label for="loginPassword">Mật khẩu</label>
+            <input type="password" id="loginPassword" name="password" autocomplete="current-password" required>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Đăng nhập</button>
+          <p class="small"><a href="quenmatkhau.html" class="text-link">Quên mật khẩu?</a></p>
+        </form>
+
+        <form id="registerForm" role="tabpanel" novalidate hidden>
+          <p class="form-note err" role="alert" hidden></p>
+          <div class="form-field">
+            <label for="regName">Họ và tên</label>
+            <input type="text" id="regName" name="fullName" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="regEmail">Email</label>
+              <input type="email" id="regEmail" name="email" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+              <label for="regPhone">Số điện thoại</label>
+              <input type="tel" id="regPhone" name="phone" autocomplete="tel" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="regPassword">Mật khẩu</label>
+              <input type="password" id="regPassword" name="password" autocomplete="new-password" aria-describedby="pwHint" required>
+            </div>
+            <div class="form-field">
+              <label for="regConfirm">Nhập lại mật khẩu</label>
+              <input type="password" id="regConfirm" name="confirm" autocomplete="new-password" required>
+            </div>
+          </div>
+          <p class="muted small" id="pwHint">Ít nhất 8 ký tự, gồm cả chữ và số.</p>
+          <button class="btn btn-primary btn-block" type="submit">Tạo tài khoản</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/app.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

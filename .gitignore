@@ -1,0 +1,11 @@
+# Thư viện — không đẩy lên, ai clone về tự npm install
+node_modules/
+
+# File cấu hình chứa mật khẩu — KHÔNG đẩy lên GitHub
+.env
+
+# File hệ thống
+.DS_Store
+Thumbs.db
+*.log
+
