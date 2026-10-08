@@ -12,11 +12,11 @@
 --    6. Một số câu truy vấn mẫu
 -- =========================================================
 
-DROP DATABASE IF EXISTS lua_fashion;
-CREATE DATABASE lua_fashion
-  CHARACTER SET utf8mb4
-  COLLATE utf8mb4_unicode_ci;
-USE lua_fashion;
+--DROP DATABASE IF EXISTS lua_fashion;
+--CREATE DATABASE lua_fashion
+--  CHARACTER SET utf8mb4
+--  COLLATE utf8mb4_unicode_ci;
+-- USE lua_fashion;
 
 -- ---------------------------------------------------------
 -- 2. BẢNG
